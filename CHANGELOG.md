@@ -13,7 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   **Security** in case of vulnerabilities.
 
 ## [Unreleased]
--  Added GitHub action to compile executable on release
+-	Added GitHub action to compile executable on release
+-	Updated Task calls so it works with Empire
 
 ## 1.1 - 2024-03-13
 ### Added
