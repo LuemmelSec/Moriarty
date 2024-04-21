@@ -50,6 +50,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Outlook.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Outlook.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
@@ -70,7 +74,9 @@
     <Compile Include="Msrc\CVE-2021-27065.cs" />
     <Compile Include="Msrc\CVE-2021-44228.cs" />
     <Compile Include="Msrc\CVE-2022-22965.cs" />
+    <Compile Include="Msrc\CVE-2022-34718.cs" />
     <Compile Include="Msrc\CVE-2022-40140.cs" />
+    <Compile Include="Msrc\CVE-2023-23397.cs" />
     <Compile Include="Msrc\CVE_2021_26855.cs" />
     <Compile Include="Msrc\CVE_2021_26857.cs" />
     <Compile Include="Utils\Debug.cs" />
@@ -109,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">

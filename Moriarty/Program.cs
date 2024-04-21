@@ -1,9 +1,6 @@
 using Moriarty.Msrc;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Reflection;
-using System.Linq;
 
 namespace Moriarty
 {
@@ -17,6 +14,17 @@ namespace Moriarty
     {
         static List<IVulnerabilityCheck> vulnerabilityChecks = new List<IVulnerabilityCheck>
         {
+            new MS10_015(),
+            new MS10_092(),
+            new MS13_053(),
+            new MS13_081(),
+            new MS14_058(),
+            new MS15_051(),
+            new MS15_078(),
+            new MS16_016(),
+            new MS16_032(),
+            new MS16_034(),
+            new MS16_135(),
             new CVE_2019_0836(),
             new CVE_2019_0841(),
             new CVE_2019_1064(),
@@ -29,20 +37,8 @@ namespace Moriarty
             new CVE_2020_0668(),
             new CVE_2020_0683(),
             new CVE_2020_1013(),
-            new MS10_015(),
-            new MS10_092(),
-            new MS13_053(),
-            new MS13_081(),
-            new MS14_058(),
-            new MS15_051(),
-            new MS15_078(),
-            new MS16_016(),
-            new MS16_032(),
-            new MS16_034(),
-            new MS16_135(),
             new CVE_2017_7199(),
             new CVE_2020_0796(),
-            new CVE_2023_36664(),
             new CVE_2021_1675(),
             new CVE_2021_44228(),
             new CVE_2022_40140(),
@@ -52,6 +48,9 @@ namespace Moriarty
             new CVE_2021_26857(),
             new CVE_2021_27065(),
             new CVE_2021_26858(),
+            new CVE_2022_34718(),
+            new CVE_2023_36664(),
+            new CVE_2023_23397(),
         };
 
         public static void Main(string[] args)
