@@ -54,7 +54,7 @@ namespace Moriarty
             new CVE_2021_26858(),
         };
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Info.PrintLogo();
             foreach (var arg in args)

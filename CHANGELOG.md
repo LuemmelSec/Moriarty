@@ -13,7 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   **Security** in case of vulnerabilities.
 
 ## [Unreleased]
+-	Added GitHub action to compile executable on release
+-	Updated Task calls so it works with Empire
 
+## 1.1 - 2024-03-13
 ### Added
 -   Added CVE-2021-26855 (ProxyLogon) scan
 -   Added CVE 2021-36934 (HiveNightmare)
@@ -25,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 -   Remove redundant lists within program
 
-### Changed**
+### Changed
 -   Updated Windows version check to return build number if not supported but still run
 
 ### Fixed
