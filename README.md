@@ -25,6 +25,32 @@ After cloning the repository, you can build the Moriarty executable using Visual
 4. Build the solution by selecting "Build > Build Solution" from the menu.
 
 ## Usage
+
+### Help Menu
+```
+C:\> Moriarty.exe --help
+
+███    ███  ██████  ██████  ██  █████  ██████  ████████ ██    ██
+████  ████ ██    ██ ██   ██ ██ ██   ██ ██   ██    ██     ██  ██
+██ ████ ██ ██    ██ ██████  ██ ███████ ██████     ██      ████
+██  ██  ██ ██    ██ ██   ██ ██ ██   ██ ██   ██    ██       ██
+██      ██  ██████  ██   ██ ██ ██   ██ ██   ██    ██       ██
+                                                 v1.2
+                                                 BC Security
+
+Usage: Moriarty.exe [options]
+Options:
+  -h, --help       Display this help message.
+  -d, --debug      Run in debug mode for additional output.
+  -l, --list-vulns List all vulnerabilities that are scanned for.
+
+Examples:
+  Moriarty.exe -d
+  Moriarty.exe --list-vulns
+
+```
+
+### Scan
 ```
 C:\> Moriarty.exe
 ███    ███  ██████  ██████  ██  █████  ██████  ████████ ██    ██
@@ -33,7 +59,7 @@ C:\> Moriarty.exe
 ██  ██  ██ ██    ██ ██   ██ ██ ██   ██ ██   ██    ██       ██
 ██      ██  ██████  ██   ██ ██ ██   ██ ██   ██    ██       ██
 
-                                                 v1.0
+                                                 v1.2
                                                  BC Security
 
  [*] OS Version: 22H2 (22621)
@@ -44,8 +70,9 @@ C:\> Moriarty.exe
  [+] PrintNightmare (CVE-2021-1675, CVE-2021-34527) : VULNERABLE
   [>] https://github.com/xbufu/PrintNightmareCheck/tree/main
 
- [*] Vulnerabilities found: 2/30
+ [*] Vulnerabilities found: 2/37
  [+] Scan Complete!
+ 
 ```
 
 ## CVEs and Vulnerabilities
