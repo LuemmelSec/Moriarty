@@ -13,13 +13,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   **Security** in case of vulnerabilities.
 
 ## [Unreleased]
--	Added GitHub action to compile executable on release
--	Updated Task calls so it works with Empire
+### Added
+-   Added GitHub action to compile executable on release
 -   Added 2023-23397
--	Added 2022-34718
+-   Added 2022-34718
+
+### Removed
 -   Removed unused imports
--   Updated CVE-2021-44228 to have a max depth for scanning files
+
+### Changed
 -   Updated min .NET version to 4.5
+-   Updated CVE-2021-44228 to have a max depth for scanning files
+-   Updated Task calls so it works with Empire
 
 ## 1.1 - 2024-03-13
 ### Added
