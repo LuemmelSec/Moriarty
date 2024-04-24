@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Moriarty.Msrc
 {
@@ -35,7 +34,7 @@ namespace Moriarty.Msrc
             CheckAsync(vulnerabilities, buildNumber, installedKBs).GetAwaiter().GetResult();
         }
 
-        private async Task CheckAsync(VulnerabilityCollection vulnerabilities, int buildNumber, List<int> installedKBs)
+        private async System.Threading.Tasks.Task CheckAsync(VulnerabilityCollection vulnerabilities, int buildNumber, List<int> installedKBs)
         {
             var exchangeInstallPath = Environment.GetEnvironmentVariable("exchangeinstallpath");
             if (string.IsNullOrWhiteSpace(exchangeInstallPath))
@@ -74,7 +73,7 @@ namespace Moriarty.Msrc
                 DebugUtility.DebugPrint("No webshells found, but further examination is recommended.");
             }
         }
-        private static async Task<string> ReadFileContentAsync(string filePath)
+        private static async System.Threading.Tasks.Task<string> ReadFileContentAsync(string filePath)
         {
             using (var reader = new StreamReader(filePath))
             {

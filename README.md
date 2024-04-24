@@ -25,6 +25,32 @@ After cloning the repository, you can build the Moriarty executable using Visual
 4. Build the solution by selecting "Build > Build Solution" from the menu.
 
 ## Usage
+
+### Help Menu
+```
+C:\> Moriarty.exe --help
+
+███    ███  ██████  ██████  ██  █████  ██████  ████████ ██    ██
+████  ████ ██    ██ ██   ██ ██ ██   ██ ██   ██    ██     ██  ██
+██ ████ ██ ██    ██ ██████  ██ ███████ ██████     ██      ████
+██  ██  ██ ██    ██ ██   ██ ██ ██   ██ ██   ██    ██       ██
+██      ██  ██████  ██   ██ ██ ██   ██ ██   ██    ██       ██
+                                                 v1.2
+                                                 BC Security
+
+Usage: Moriarty.exe [options]
+Options:
+  -h, --help       Display this help message.
+  -d, --debug      Run in debug mode for additional output.
+  -l, --list-vulns List all vulnerabilities that are scanned for.
+
+Examples:
+  Moriarty.exe -d
+  Moriarty.exe --list-vulns
+
+```
+
+### Scan
 ```
 C:\> Moriarty.exe
 ███    ███  ██████  ██████  ██  █████  ██████  ████████ ██    ██
@@ -33,7 +59,7 @@ C:\> Moriarty.exe
 ██  ██  ██ ██    ██ ██   ██ ██ ██   ██ ██   ██    ██       ██
 ██      ██  ██████  ██   ██ ██ ██   ██ ██   ██    ██       ██
 
-                                                 v1.0
+                                                 v1.2
                                                  BC Security
 
  [*] OS Version: 22H2 (22621)
@@ -44,8 +70,9 @@ C:\> Moriarty.exe
  [+] PrintNightmare (CVE-2021-1675, CVE-2021-34527) : VULNERABLE
   [>] https://github.com/xbufu/PrintNightmareCheck/tree/main
 
- [*] Vulnerabilities found: 2/30
+ [*] Vulnerabilities found: 2/37
  [+] Scan Complete!
+ 
 ```
 
 ## CVEs and Vulnerabilities
@@ -85,6 +112,8 @@ Moriarty scans for a variety of CVEs and vulnerabilities. Below is a table detai
 | [CVE-2021-27065](https://www.cve.org/CVERecord?id=CVE-2021-27065) | A post-authentication arbitrary file write vulnerability in Exchange Server could lead to remote code execution. |
 | [CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228) | Log4Shell, a remote code execution vulnerability in Apache Log4j. |
 | [CVE-2021-36934](https://www.cve.org/CVERecord?id=CVE-2021-36934) | HiveNightmare - A vulnerability that allows for local privilege escalation due to overly permissive Access Control Lists (ACLs) on system files, including the Security Accounts Manager (SAM). |
+| [CVE-2022-34718](https://www.cve.org/CVERecord?id=CVE-2022-34718) | Windows TCP/IP Remote Code Execution Vulnerability. |
 | [CVE-2022-40140](https://www.cve.org/CVERecord?id=CVE-2022-40140) | A vulnerability in Microsoft Exchange Server leading to remote code execution. |
 | [CVE-2022-22965](https://www.cve.org/CVERecord?id=CVE-2022-22965) | Spring4Shell, a remote code execution vulnerability in Spring Framework. |
 | [CVE-2023-36664](https://www.cve.org/CVERecord?id=CVE-2023-36664) | Artifex Ghostscript through 10.01.2 mishandles permission validation for pipe devices (with the %pipe% prefix or the pipe character prefix). |
+| [CVE-2023-23397](https://www.cve.org/CVERecord?id=CVE-2023-23397) | Microsoft Outlook Elevation of Privilege Vulnerability. |
