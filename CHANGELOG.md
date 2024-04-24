@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   **Security** in case of vulnerabilities.
 
 ## [Unreleased]
+
+
+## 1.2 - 2024-04-24
 ### Added
 -   Added GitHub action to compile executable on release
 -   Added 2023-23397
